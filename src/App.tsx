@@ -11,7 +11,7 @@ function App() {
     }>();
 
     useEffect(() => {
-        document.addEventListener('keypress', function (event) {
+        document.addEventListener('keydown', function (event) {
             setKey({
                 keyName: event.key,
                 location: event.location,
@@ -21,7 +21,7 @@ function App() {
         });
 
         return () => {
-            document.removeEventListener('keypress', function () {});
+            document.removeEventListener('keydown', function () {});
         };
     }, []);
 
