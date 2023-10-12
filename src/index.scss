@@ -1,0 +1,67 @@
+:root {
+    --bg-light-blue: #17a2b8;
+    --bg-pale-blue: #78c0c9;
+}
+
+.container-input-keyboard {
+    background: var(--bg-light-blue);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.alert {
+    color: var(--bg-light-blue);
+    font-size: 40px;
+    background: white;
+    font-weight: 500;
+    padding: 10px 40px;
+    border-radius: 12px;
+}
+
+.box {
+    &__result {
+        color: white;
+        font-size: 70px;
+        width: 250px;
+        height: 250px;
+        border: 7px solid white;
+        border-radius: 50%;
+        font-weight: 600;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    &__detail {
+        display: flex;
+    }
+
+    &__card {
+        background-color: white;
+        margin: 20px;
+        width: 300px;
+        text-align: center;
+        border-radius: 10px;
+        // overflow: hidden;
+        font-size: 20px;
+
+        &__header {
+            background-color: var(--bg-pale-blue);
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        &__body {
+            padding: 10px;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+    }
+}
